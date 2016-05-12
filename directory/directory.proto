@@ -1,0 +1,10 @@
+message Directory {
+  message File {
+    required string path = 1;
+    required uint32 mode = 2;
+    required string checksum = 3;
+    required int64 lastUpdate = 4;
+  }
+
+  repeated File files = 1;
+}

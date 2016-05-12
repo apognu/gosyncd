@@ -1,0 +1,13 @@
+message File {
+  required string path = 1;
+  required uint32 mode = 2;
+  required bytes payload = 3;
+
+  enum Action {
+    ADD = 0;
+    UPDATE = 1;
+    DELETE = 2;
+  }
+
+  required Action action = 4;
+}
